@@ -246,9 +246,11 @@ export default function App() {
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           <a href="#hero" className="flex items-center space-x-3 group" id="logo-link">
-            <div className="w-10 h-10 rounded-lg bg-brand-primary flex items-center justify-center text-white font-bold text-lg shadow-md group-hover:shadow-lg transition-all group-hover:bg-brand-secondary">
-              CS
-            </div>
+            <img 
+              src={`${import.meta.env.BASE_URL}logo.png`} 
+              alt="Cynsixtus Solutions Logo" 
+              className="w-10 h-10 rounded-lg object-contain shadow-md group-hover:shadow-lg transition-all"
+            />
             <div>
               <span className="block font-display font-bold text-lg leading-tight text-slate-900 group-hover:text-brand-primary transition-colors">
                 Cynsixtus Solutions
@@ -1493,9 +1495,11 @@ export default function App() {
             {/* Logo column */}
             <div className="col-span-2 space-y-6 text-left">
               <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 rounded-lg bg-brand-primary flex items-center justify-center text-white font-bold text-lg shadow-md">
-                  CS
-                </div>
+                <img 
+                  src={`${import.meta.env.BASE_URL}logo.png`} 
+                  alt="Cynsixtus Solutions Logo" 
+                  className="w-10 h-10 rounded-lg object-contain shadow-md"
+                />
                 <div>
                   <span className="block font-display font-bold text-lg leading-tight text-white">
                     Cynsixtus Solutions
