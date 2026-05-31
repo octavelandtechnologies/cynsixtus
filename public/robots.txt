@@ -1,0 +1,7 @@
+# www.robotstxt.org/
+# Cynsixtus Solutions Limited robots.txt configuration
+
+User-agent: *
+Allow: /
+
+Sitemap: https://octavelandtechnologies.github.io/cynsixtus/sitemap.xml
