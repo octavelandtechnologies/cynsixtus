@@ -409,26 +409,23 @@ export default function App() {
           <div className="grid lg:grid-cols-12 gap-12 items-center">
             
             {/* Hero Left Copy */}
-            <div className="lg:col-span-8 space-y-8 text-left">
+            <div className="lg:col-span-8 space-y-8 text-center lg:text-left flex flex-col items-center lg:items-start">
               
               <div className="inline-flex items-center space-x-2.5 bg-brand-primary/15 border border-brand-primary/30 px-3.5 py-1.5 rounded-full text-brand-primary text-xs font-semibold backdrop-blur-md" id="badge-incorporated">
                 <span className="w-2 h-2 rounded-full bg-brand-primary animate-ping"></span>
                 <span>Incorporated under RC: 9297918</span>
               </div>
 
-              <h1 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-white leading-[1.1] max-w-4xl" id="hero-heading">
-                Building Excellence. <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-emerald-400">
-                  Designing the Future.
-                </span>
+              <h1 id="hero-heading">
+                <img 
+                  src={`${import.meta.env.BASE_URL}logo_large.png`} 
+                  alt="CYNSIXTUS SOLUTIONS LIMITED" 
+                  className="h-[50vh] sm:h-[60vh] lg:h-[70vh] w-auto object-contain mx-auto lg:mx-0"
+                />
               </h1>
 
-              <p className="text-slate-300 text-base sm:text-lg lg:text-xl leading-relaxed max-w-2xl" id="hero-subheading">
-                Cynsixtus Solutions Limited is Nigeria's premier engineering and construction authority. We engineer high-integrity structural builds, craft approved architectural blueprints, and manage turnkey physical projects on time and on budget.
-              </p>
-
               {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-4 pt-2 w-full sm:w-auto">
                 <a 
                   href="#contact" 
                   className="bg-brand-primary hover:bg-brand-secondary text-white text-base py-4 px-8 rounded-xl font-bold shadow-xl shadow-brand-primary/25 text-center transition-all hover:-translate-y-1 active:translate-y-0 flex items-center justify-center space-x-2 group"
